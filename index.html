@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NovelVerse Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .ranking-list li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .ranking-list li:last-child {
+            border-bottom: none;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+        .coin-system, .ads-section, .subscription-section, .author-portal, .author-benefits {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .coin-system button, .ads-section button, .subscription-section button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to NovelVerse</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#genres">Genres</a>
+        <a href="#profile">Profile</a>
+        <a href="#ranking">Ranking</a>
+        <a href="#admin">Admin Dashboard</a>
+        <a href="#monetization">Monetization</a>
+        <a href="#author-portal">Author Portal</a>
+    </nav>
+
+    <!-- Genres Section -->
+    <section id="genres">
+        <h2>Genres</h2>
+        <ul>
+            <li>Romance</li>
+            <li>Fantasy</li>
+            <li>Werewolf</li>
+            <li>Drama</li>
+            <li>Adventure</li>
+        </ul>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <h2>User Profile</h2>
+        <p>Username: Reader123</p>
+        <p>Email: reader123@email.com</p>
+        <button>Edit Profile</button>
+    </section>
+
+    <!-- Ranking Section -->
+    <section id="ranking">
+        <h2>Top Ranked Novels</h2>
+        <ul class="ranking-list">
+            <li>1. The Dragon's Heir - 500,000 views</li>
+            <li>2. Moonlit Destiny - 450,000 views</li>
+            <li>3. Shadow Chronicles - 400,000 views</li>
+            <li>4. Eternal Love - 350,000 views</li>
+            <li>5. Apocalypse Rising - 300,000 views</li>
+        </ul>
+    </section>
+
+    <!-- Admin Dashboard Section -->
+    <section id="admin">
+        <h2>Admin Dashboard</h2>
+        <form>
+            <label for="username">Admin Username:</label>
+            <input type="text" id="username" placeholder="Enter admin username" required>
+
+            <label for="password">Admin Password:</label>
+            <input type="password" id="password" placeholder="Enter admin password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Monetization Section -->
+    <section id="monetization">
+        <h2>Monetization Options</h2>
+        <div class="coin-system">
+            <h3>Buy Coins</h3>
+            <button>Buy 100 Coins - $1.99</button>
+            <button>Buy 500 Coins - $8.99</button>
+            <button>Buy 1000 Coins - $15.99</button>
+        </div>
+        <div class="ads-section">
+            <h3>Watch Ads for Rewards</h3>
+            <button>Watch Ad</button>
+        </div>
+        <div class="subscription-section">
+            <h3>Subscription Plans</h3>
+            <button>Subscribe - $9.99/month</button>
+        </div>
+    </section>
+
+    <!-- Author Portal Section -->
+    <section id="author-portal">
+        <h2>Author Portal</h2>
+        <form>
+            <label for="author-name">Author Name:</label>
+            <input type="text" id="author-name" placeholder="Enter your name" required>
+
+            <label for="novel-title">Novel Title:</label>
+            <input type="text" id="novel-title" placeholder="Enter your novel's title" required>
+
+            <label for="novel-content">Novel Content:</label>
+            <textarea id="novel-content" rows="5" placeholder="Write your novel here..." required></textarea>
+
+            <button type="submit">Submit Novel</button>
+        </form>
+    </section>
+
+    <!-- Author Benefits Section -->
+    <section class="author-benefits">
+        <h2>Why Write with Us?</h2>
+        <ul>
+            <li>Earn a 60% revenue share from novel sales and coins.</li>
+            <li>Get bonuses for hitting monthly word count and viewership milestones.</li>
+            <li>Track your earnings and reader engagement in real-time.</li>
+        </ul>
+    </section>
+</body>
+</html>
